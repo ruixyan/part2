@@ -28,7 +28,7 @@
 
         .input_container {
             display: flex;
-            gap: 10rem; /* Space between input fields */
+            gap: 10rem; 
             align-items: center;
         }
 
@@ -36,23 +36,23 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: relative; /* Ensure relative positioning for absolute children */
+            position: relative; 
         }
 
         #charInput1, #charInput2 {
             background-color: rgba(255, 255, 255, 0.5);
-            width: 3rem; /* Fixed width */
-            height: 3rem; /* Fixed height */
+            width: 3rem; 
+            height: 3rem; 
             padding: 10px;
             font-size: 2rem;
             font-family: "code-saver", sans-serif;
             font-weight: 700;
             font-style: normal;
             text-transform: uppercase;
-            border: 2px solid #ccc;
+            border: 2px solid #FFFFFF;
             border-radius: 5px;
-            text-align: center; /* Center text horizontally */
-            line-height: 4rem; /* Center text vertically */
+            text-align: center; 
+            line-height: 4rem; 
         }
 
         #charInput1:hover, #charInput2:hover {
@@ -69,9 +69,9 @@
             margin-bottom: 0.5rem;
             margin-left: 0.5rem;
             width: 8rem;
-            transition: opacity 0.2s ease-in-out; /* Smooth transition */
-            position: absolute; /* Position absolutely to avoid layout shifts */
-            top: -2rem; /* Position above the input field */
+            transition: opacity 0.2s ease-in-out; 
+            position: absolute; 
+            top: -2rem; 
         }
 
         #submitButton {
@@ -87,20 +87,20 @@
             margin-top: 4rem;
             cursor: pointer;
             transition: all 0.2s ease-in-out;
-            position: relative; /* Ensure button is positioned for blending */
-            z-index: 1; /* Ensure button is above other content */
+            position: relative; 
+            z-index: 1; 
         }
 
         #submitButton:hover {
             background-image: linear-gradient(
                 90deg,
-                rgba(255, 0, 0, 0.5), /* Red with 50% opacity */
-                rgba(0, 255, 0, 0.5), /* Green with 50% opacity */
-                rgba(0, 0, 255, 0.5)  /* Blue with 50% opacity */
+                rgba(255, 0, 0, 0.5), 
+                rgba(0, 255, 0, 0.5), 
+                rgba(0, 0, 255, 0.5)  
             );
-            background-size: 200% 100%; /* Double the width for animation */
-            border: 1.5px solid; /* Remove border to avoid overlapping */
-            animation: moveGradient 2s linear infinite; /* Apply animation */
+            background-size: 200% 100%; 
+            border: 1.5px solid; 
+            animation: moveGradient 2s linear infinite;
             transition: all 0.2s ease-in-out;
         }
 
@@ -108,24 +108,24 @@
         #submitButton:active {
             background-image: linear-gradient(
                 90deg,
-                rgba(255, 0, 0, 0.8), /* Red with 80% opacity */
-                rgba(0, 255, 0, 0.8), /* Green with 80% opacity */
-                rgba(0, 0, 255, 0.8)  /* Blue with 80% opacity */
+                rgba(255, 0, 0, 0.8), 
+                rgba(0, 255, 0, 0.8), 
+                rgba(0, 0, 255, 0.8)  
             );
-            background-size: 200% 100%; /* Double the width for animation */
-            animation: moveGradient 2s linear infinite; /* Apply animation */
+            background-size: 200% 100%; 
+            animation: moveGradient 2s linear infinite;
             transition: all 0.2s ease-in-out;
         }
 
         @keyframes moveGradient {
             0% {
-                background-position: 0% 50%; /* Start position */
+                background-position: 0% 50%; 
             }
             50% {
-                background-position: 100% 50%; /* End position */
+                background-position: 100% 50%; 
             }
             100% {
-                background-position: 0% 50%; /* Start position */
+                background-position: 0% 50%; 
             }
         }
 
